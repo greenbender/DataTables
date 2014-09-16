@@ -2379,6 +2379,8 @@
 					log( oSettings, 0, 'Ajax error', 7 );
 				}
 	
+				_fnCallbackFire( oSettings, null, 'xhr', [oSettings] );
+
 				_fnProcessingDisplay( oSettings, false );
 			}
 		};
